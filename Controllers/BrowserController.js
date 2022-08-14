@@ -1,13 +1,13 @@
 const Post = require("../Model/Post");
 
 exports.getIndexPage = async (req, res) => {
-    try {
-        const result = await Post.find().sort({ createdAt: -1 });
+    try {                                                                    
+        const result = await Post.find().sort({createdAt:-1});
         res.status(200).json(result);
     } catch (err) {
         res.status(404).json({ message: "no posts not found!" });
         console.log(err);
-    }
+    }       
 };
 exports.getSinglePage = async (req, res) => {
     const postId = req.params.postId;

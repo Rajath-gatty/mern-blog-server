@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/ef00dd67-2983-4be5-a8f6-5a115527db72/microsoft.web/sites/subscriptions/ef00dd67-2983-4be5-a8f6-5a115527db72/resourceGroups/mern-blog-server/providers/Microsoft.Web/sites/mern-blog-server",
+    "appService.deploySubpath": "."
+}

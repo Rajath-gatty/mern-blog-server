@@ -83,6 +83,7 @@ exports.getAdmin = async (req, res) => {
         const userPost = await User.findById(req.id).populate("posts");
         res.json({ posts: userPost.posts });
     } catch (err) {
+        console.log(err);
         res.status(404).json({ message: "Something went wrong" });
     }
 };
