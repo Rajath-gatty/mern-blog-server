@@ -1,5 +1,4 @@
 const Post = require("../Model/Post");
-// const { Readable } = require("stream");
 const {BlobServiceClient, StorageSharedKeyCredential} = require("@azure/storage-blob");
 const User = require("../Model/User");
 const sharp = require("sharp");
